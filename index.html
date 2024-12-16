@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Промоутер Клуба</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            overflow-x: hidden;
+            background: radial-gradient(circle, #2a2a72, #000000);
+        }
+
+        .promo-card {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: url('images/card-background.jpg') no-repeat center center;
+            background-size: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(63, 63, 191, 0.6);
+            text-align: center;
+            color: white;
+        }
+
+        .logo {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto 15px;
+            display: block;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .promo-card h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .promo-card p {
+            font-size: 16px;
+            color: #cccccc;
+            margin-bottom: 20px;
+        }
+
+        .promo-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .promo-buttons a {
+            display: block;
+            width: 90%;
+            margin: 10px 0;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            color: #000;
+            background: linear-gradient(90deg, #8093ff, #9f5de2);
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(159, 93, 226, 0.6);
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .promo-buttons a:hover {
+            background: linear-gradient(90deg, #9f5de2, #8093ff);
+            color: white;
+            box-shadow: 0 12px 30px rgba(159, 93, 226, 0.8);
+            transform: translateY(-3px);
+        }
+
+        .separator-name {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        .separator-name:before,
+        .separator-name:after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #8093ff;
+        }
+
+        .separator-name span {
+            margin: 0 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #8093ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="promo-card">
+        <img class="logo" src="images/new-image.png" alt="Фото">
+        <h1>Карточка промоутера</h1>
+        <p>Добро пожаловать! Здесь ты найдешь полезную и вспомогающую информацию.</p>
+        <div class="promo-buttons">
+            <a href="basic-info.html">Базовая информация</a>
+            <div class="separator-name"><span>NAME</span></div>
+            <a href="rate.html">Ставка</a>
+            <a href="bonuses.html">Бонусы</a>
+            <div class="separator-name"><span>NAME</span></div>
+            <a href="lifehacks.html">База лайфхаков</a>
+            <a href="menu.html">Меню</a>
+        </div>
+    </div>
+</body>
+</html>
